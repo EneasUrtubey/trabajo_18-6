@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,
+        initial-scale=1.0" />
+  <title>Pills navigation menu</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <style>
+    @media (max-width: 540px) {
+      nav {
+        min-width: 540px;
+        width: 100%;
+      }
+    }
+
+    .nav-pills .nav-link {
+      color: black;
+    }
+
+
+    body {
+      background-color: black;
+      color: white;
+    }
+
+    .hero {
+      height: 400px;
+      background-color: black;
+      color: white;
+      display: flex;
+      align-items: center;
+    }
+
+    .carousel-indicators button {
+      background-color: white;
+    }
+
+    .carousel-indicators button.active {
+      background-color: yellow;
+    }
+  </style>
+
+
+  <section id="nav">
+    <nav class="nav nav-pills p-4 bg-dark justify-content-around sticky-top">
+      <a class="nav-link active bg-warning" aria-current="true" href="#">INICIO</a>
+      <a class="nav-link active bg-warning" href="#oradores">ORADORES</a>
+      <a class="nav-link active bg-warning" href="#ElLugar">EL LUGAR</a>
+      <a class="nav-link active bg-warning" href="#anotate">ANOTATE</a>
+      <a class="nav-link active bg-warning" href="#tickets">TICKETS</a>
+    </nav>
+  </section>
+  <div class="col-md-5 offset-md-1 mb-3 bg-warning border-warning"></div>
+
+  <section id="hero">
+    <div class="container my-5 bg-dark rounded">
+      <div
+        class="row text-center p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border-warning border-warning-lg">
+        <div class="col-lg-4 p-0 overflow-hidden shadow-lg">
+          <img class="rounded-lg-3" src="assets/img/main_pic.png" alt="" width="720">
+        </div>
+        <div class="col-lg-7 offset-lg-1 p-3 p-lg-5 pt-lg-3">
+          <h1 class="display-4 fw-bold lh-1 text-warning">Conferencia Bs As</h1>
+
+          <p class="lead text-warning">Bs As llega por primera vez a Argentina. Un evento para
+            compartir con nuestra comunidad el conocimiento y experiencia
+            de los expertos que están creando el futuro de Internet. Ven a
+            conocer a miembros del evento, a otros estudiantes de Codo a
+            Codo y los oradores de primer nivel que tenemos para ti. Te
+            esperamos!</p>
+          <div class="d-grid justify-content-center mb-3">
+            <a class="btn btn-outline-warning btn-lg btn-shadow w-100 mx-2" href="index.html#anotate"
+              role="button">Quiero ser orador</a>
+          </div>
+          <div class="d-grid justify-content-center mb-3">
+            <a class="btn btn-warning btn-lg btn-shadow w-100 mx-2" href="#tickets" role="button">Comprar
+              tickets</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="oradores" class="bg-black mt-5 my-5">
+    <div class="container bg-warning w-100 text-center rounded">
+      <h1 class="text-dark">LOS ORADORE</h1>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card border-warning bg-black h-100">
+            <img src="assets/img/steve.jpg" class="card-img-top" alt="...">
+            <div class="card-body text-warning">
+              <span class="badge bg-white text-danger rounded border-warning">Javascript</span>
+              <span class="badge bg-info text-light rounded border-warning">React</span>
+              <h5 class="card-title">Steve Jobs</h5>
+              <p class="card-text">Steve Jobs fue un visionario y emprendedor tecnológico que cofundó Apple. Revolucionó
+                la industria con productos icónicos como el iPhone y el iPad. Su genialidad, perfeccionismo y
+                creatividad dejaron un legado duradero en la tecnología y el diseño.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card border-warning bg-black h-100">
+            <img src="assets/img/bill.jpg" class="card-img-top" alt="...">
+            <div class="card-body text-warning">
+              <span class="badge bg-success text-light rounded border-warning">Javascript</span>
+              <span class="badge bg-info text-light rounded border-warning">React</span>
+              <h5 class="card-title">Bill Gates</h5>
+              <p class="card-text">Bill Gates es un destacado empresario y filántropo. Co-fundó Microsoft y lideró la
+                revolución de la computación personal. Su visión estratégica, innovación y compromiso con la filantropía
+                han transformado la tecnología y mejorado la vida de millones de personas en todo el mundo.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card border-warning bg-black h-100">
+            <img src="assets/img/ada.jpeg" class="card-img-top" alt="...">
+            <div class="card-body text-warning">
+              <span class="badge bg-secondary rounded border-warning">Negocios</span>
+              <span class="badge bg-danger rounded border-warning">Startups</span>
+              <h5 class="card-title">Ada Lovelace</h5>
+              <p class="card-text">Ada Lovelace fue una pionera en la informática. Considerada la primera programadora.
+                Sus ideas visionarias sobre el potencial de las computadoras y la programación sentaron las bases para
+                la revolución tecnológica que vivimos hoy. Su legado inspira a mujeres en la ciencia y la tecnología.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="ElLugar" class="bg-black my-5">
+    <div class="container bg-warning w-100 text-center rounded my-5 mt-5">
+      <h1 class="text-dark">EL LUGAR</h1>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="assets/img/main_pic.png" alt="Main Picture" class="img-fluid">
+        </div>
+        <div class="col-md-6">
+          <div class="text-warning">
+            <h2 class="text-center mb-4">OCTUBRE</h2>
+            <div class="text-center">
+              <p>Buenos Aires, capital de Argentina, es una metrópolis vibrante y cosmopolita. Con su rica historia,
+                arquitectura europea, tango apasionado y sabrosa gastronomía, cautiva a visitantes de todo el mundo. Sus
+                amplias avenidas, parques verdes y destacados barrios como Palermo y La Boca hacen de Buenos Aires un
+                destino culturalmente diverso e inolvidable</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="anotate" class="bg-black">
+    <div class="container bg-warning w-100 text-center rounded">
+      <h1 class="text-dark">INSCRIPCIONES</h1>
+    </div>
+    <div class="container mt-5 my-5">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="text-center text-warning">Anotate</h2>
+          <form onsubmit="return verificar()" class="border border-warning p-3">
+            <div class="form-group">
+              <label for="name" class="text-warning">Nombre:</label>
+              <input type="text" class="form-control text-warning bg-black border-warning text-warning" id="name"
+                name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="lastName" class="text-warning">Apellido:</label>
+              <input type="text" class="form-control text-warning bg-black border-warning text-warning" id="lastName"
+                name="lastName" required>
+            </div>
+            <div class="form-group">
+              <label for="mail" class="text-warning">Correo Electrónico:</label>
+              <input type="email" class="form-control text-warning bg-black border-warning text-warning" id="mail"
+                name="mail" required>
+            </div>
+            <div class="form-group">
+              <label for="message" class="text-warning">Mensaje:</label>
+              <input type="text" class="form-control bg-black border-warning text-warning" id="message" name="message"
+                placeholder="No olvides incluir tu mensaje" minlength="10" required>
+            </div>
+            <div class="text-center mt-3">
+              <button type="submit" class="btn btn-warning">Enviar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="tickets">
+    <div class="container bg-warning w-100 text-center rounded">
+      <h1 class="text-dark">TICKETS VENTA</h1>
+    </div>
+
+
+
+    <div class="container-fluid mt-4">
+      <div class="row justify-content-center">
+        <div class="col-8">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+            <div class="col">
+              <div class="card text-center h-100 border-warning bg-black">
+                <img src="assets/img/general.png" class="card-img-top" alt="GENERAL">
+                <div class="card-body">
+                  <h5 class="card-title text-warning">200 PESOS</h5>
+                  <div hidden>
+                    <p>Categoría: <span id="category-1">-</span></p>
+                    <p>Cantidad: <span id="quantity-1">-</span></p>
+                    <p>Precio: $<span id="price-1">200.00</span></p>
+                  </div>
+                  <button class="btn btn-warning bg-black text-warning" id="add-to-cart-1" data-price="200.00">Agregar
+                    al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-center h-100 border-warning bg-black">
+                <img src="assets/img/junior.png" class="card-img-top" alt="JUNIOR">
+                <div class="card-body">
+                  <h5 class="card-title text-warning">170 PESOS</h5>
+                  <div hidden>
+                    <p>Categoría: <span id="category-2">-</span></p>
+                    <p>Cantidad: <span id="quantity-2">-</span></p>
+                    <p>Precio: $<span id="price-2">170.00</span></p>
+                  </div>
+                  <button class="btn btn-warning bg-black text-warning" id="add-to-cart-2" data-price="170.00">Agregar
+                    al carrito</button>
+                </div>
+              </div>
+
+            </div>
+            <div class="col">
+              <div class="card text-center h-100 border-warning bg-black">
+                <img src="assets/img/treinee.png" class="card-img-top" alt="trainee">
+                <div class="card-body">
+                  <h5 class="card-title text-warning">100 PESOS</h5>
+                  <div hidden>
+                    <p>Categoría: <span id="category-3">-</span></p>
+                    <p>Cantidad: <span id="quantity-3">-</span></p>
+                    <p>Precio: $<span id="price-3">100.00</span></p>
+                  </div>
+                  <button class="btn btn-warning bg-black text-warning" id="add-to-cart-3" data-price="100.00">Agregar
+                    al carrito</button>
+                </div>
+              </div>
+
+            </div>
+            <div class="col">
+              <div class="card text-center h-100 border-warning bg-black">
+                <img src="assets/img/estudiante.png" class="card-img-top" alt="estudiante">
+                <div class="card-body">
+                  <h5 class="card-title text-warning">40 PESOS</h5>
+                  <div hidden>
+                    <p>Categoría: <span id="category-4">-</span></p>
+                    <p>Cantidad: <span id="quantity-4">-</span></p>
+                    <p>Precio: $<span id="price-4">40.00</span></p>
+                  </div>
+                  <button class="btn btn-warning bg-black text-warning" id="add-to-cart-4" data-price="40.00">Agregar al
+                    carrito</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container mt-1">
+        <div class="row-cols-lg-4 bg-black border-warning">
+          <label for="name" class="form-label text-warning">Nombre:</label>
+          <input id="name" name="nombre" type="text" class="form-control bg-black border-warning text-warning"
+            required="">
+        </div>
+        <div class="row-cols-lg-4 bg-black border-warning">
+          <label for="lastName" class="form-label text-warning">Apellido:</label>
+          <input type="text" class="form-control bg-black border-warning text-warning" id="lastName" required="">
+        </div>
+        <div class="row-cols-lg-4 bg-black border-warning">
+          <label for="mail" class="form-label text-warning">Email:</label>
+          <input type="email" class="form-control bg-black border-warning text-warning" id="mail" required="">
+        </div>
+      </div>
+
+
+
+
+
+      <div class="container-fluid mt-4">
+        <div class="row justify-content-center">
+          <div class="col-8">
+            <div class="row">
+              <ul class="list-group list-group-flush align-items-center">
+                <ul id="cart"></ul>
+                <h1 class="text-warning border-warning">
+                  <p>Total: $<span id="total">0.00</span></p>
+                </h1>
+              </ul>
+              <div class="d-flex justify-content-evenly gap-2 mb-3">
+                <button class="btn btn-warning border-warning" id="reset-cart">BORRAR CARRITO</button>
+                <button class="btn btn-warning border-warning" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                  id="btnComprar" onclick="verificar()">COMPRAR</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="assets/js/carrito.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+</body>
+
+<!-- Modal -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content bg-black">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5 text-warning" id="exampleModalLabel">Su compra es:</h1>
+        <button type="button" class="btn-close btn-warning" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ul class="list-group list-group-flush align-items-center">
+          <ul id="cart"></ul>
+          <h1>
+            <p>Total: $<span id="total">0.00</span></p>
+          </h1>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary btn-warning" data-bs-dismiss="modal">CERRAR</button>
+        <button type="button" class="btn btn-success btn-danger">FINALIZAR COMPRA</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+</html>
